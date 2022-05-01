@@ -1,0 +1,18 @@
+# Namespaced project name that the target belongs to
+project: gimli
+
+# Target name (should be unique within the project)
+target: frame_hdr
+
+# Base image to run the binary in.
+# image: ghcr.io/prateekvishnu/gimli:latest
+
+# List of commands used to test the target
+cmds:
+
+    # Command used to start the target, "@@" is the input file
+    # (when "@@" is omitted Mayhem defaults to stdin inputs)
+    - cmd: /eh_frame_hdr
+
+ 
+
